@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Book Trial | JOE Swim Academy Heliopolis</title>
+    <meta name="description" content="Contact Elite Swim Academy in Heliopolis, Cairo at Air Force Club. Book trial sessions or request information via WhatsApp and our booking form.">
+    <link rel="canonical" href="contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+
+<body class="home-page">
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+               <div class="logo-image">
+    <img src="imges/00000.png" alt="Elite Swim Academy Logo">
+</div>
+                <div class="logo-text">
+                    <span class="academy-name">JOE Swim Academy</span>
+                    <span class="academy-location">Air Force Club • Heliopolis</span>
+                </div>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="levels.html">Levels</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="coaches.html">Coaches</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="store.html">Store</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="nav-cta-mobile">
+                    <a href="contact.html#booking-form" class="btn btn-primary btn-book">Book a Trial</a>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html#booking-form" class="btn btn-primary btn-book desktop-only">Book a Trial</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Sticky Floating Action Buttons -->
+    <div class="floating-cta">
+        <a href="contact.html#booking-form" class="float-btn float-trial" title="Book a Trial Session">
+            <i class="fa-solid fa-calendar-check"></i><span>Book Trial</span>
+        </a>
+        <a href="#" id="whatsappFloat" class="float-btn float-whatsapp" target="_blank" rel="noopener" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+    </div>
+
+
+    <main>
+        <section class="page-banner">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <span class="section-tag text-accent">Get in Touch</span>
+                    <h1 class="banner-title">Contact & Trial Booking</h1>
+                    <p class="banner-subtitle">Ready to start? Fill out the trial booking form or reach out directly via WhatsApp and phone.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="booking-form">
+            <div class="container grid-2">
+                <div class="contact-info-col">
+                    <span class="section-tag">Direct Communication</span>
+                    <h2>We're Here to Help</h2>
+                    <p class="lead-text">Have questions about our programs, schedules, or pricing? Contact us today or visit our pool at the Air Force Club in Heliopolis.</p>
+                    
+                    <div class="contact-methods-list mt-4">
+                        <div class="c-method-item">
+                            <div class="cm-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h3>Location</h3>
+                                <p id="contactLocationText">Air Force Club, Heliopolis (Masr El Gedida), Cairo, Egypt</p>
+                            </div>
+                        </div>
+                        <div class="c-method-item">
+                            <div class="cm-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h3>Phone / Inquiry</h3>
+                                <p><a href="#" id="contactPhoneLink">Loading phone...</a></p>
+                            </div>
+                        </div>
+                        <div class="c-method-item">
+                            <div class="cm-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p><a href="#" id="contactWhatsappLink" target="_blank" rel="noopener">Chat with our team instantly</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-map-box mt-4">
+                        <a href="#" id="contactMapsBtn" class="btn btn-secondary w-full text-center" target="_blank" rel="noopener"><i class="fa-solid fa-map-location-dot"></i> Open Location in Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="booking-form-col">
+                    <div class="form-card">
+                        <h2>Request a Trial Session</h2>
+                        <p class="form-desc">Fill out the details below. We will coordinate your trial session and send the request via WhatsApp.</p>
+                        
+                        <form id="trialForm" novalidate>
+                            <div class="form-group">
+                                <label for="parentName">Parent / Customer Name *</label>
+                                <input type="text" id="parentName" name="parentName" required placeholder="Enter your full name">
+                                <span class="error-msg" id="parentNameError">Please enter your name.</span>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number *</label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="e.g. 01012345678">
+                                    <span class="error-msg" id="phoneError">Please enter a valid phone number.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="studentName">Student Name</label>
+                                    <input type="text" id="studentName" name="studentName" placeholder="Swimmer's name">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="studentAge">Student Age *</label>
+                                    <input type="number" id="studentAge" name="studentAge" required min="3" max="80" placeholder="Age">
+                                    <span class="error-msg" id="ageError">Please enter student age.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="programSelect">Program *</label>
+                                    <select id="programSelect" name="programSelect" required>
+                                        <option value="">Select a program</option>
+                                        <option value="Kids Swimming">Kids Swimming</option>
+                                        <option value="Beginners">Beginners</option>
+                                        <option value="Intermediate">Intermediate</option>
+                                        <option value="Advanced">Advanced</option>
+                                        <option value="Adults">Adults</option>
+                                        <option value="Private Training">Private Training</option>
+                                        <option value="Competitive Swimming">Competitive Swimming</option>
+                                        <option value="Water Safety">Water Safety</option>
+                                    </select>
+                                    <span class="error-msg" id="programError">Please select a program.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="currentLevel">Current Level</label>
+                                    <select id="currentLevel" name="currentLevel">
+                                        <option value="Not Sure / Assessment Needed">Assessment Needed</option>
+                                        <option value="Level 1: Water Confidence">Level 1: Water Confidence</option>
+                                        <option value="Level 2: Beginner">Level 2: Beginner</option>
+                                        <option value="Level 3: Intermediate">Level 3: Intermediate</option>
+                                        <option value="Level 4: Advanced">Level 4: Advanced</option>
+                                        <option value="Level 5: Competitive">Level 5: Competitive</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredDays">Preferred Days</label>
+                                    <input type="text" id="preferredDays" name="preferredDays" placeholder="e.g. Weekdays / Weekends">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Time</label>
+                                <input type="text" id="preferredTime" name="preferredTime" placeholder="e.g. Morning / Evening">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="messageText">Message / Notes</label>
+                                <textarea id="messageText" name="messageText" rows="3" placeholder="Any specific goals or medical notes..."></textarea>
+                            </div>
+
+                            <div class="form-success-alert" id="formSuccessAlert" style="display:none;">
+                                <i class="fa-solid fa-circle-check"></i> Thank you! Your request has been received. We will contact you shortly. Opening WhatsApp to complete submission...
+                            </div>
+
+                            <button type="submit" class="btn btn-accent btn-lg w-full mt-3"><i class="fa-brands fa-whatsapp"></i> Send via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-col footer-brand">
+
+                <div class="footer-logo">
+
+                    <!-- Replace this image with your logo -->
+                    <a href="index.html" class="footer-logo-image">
+                        <img src="imges/00000.png" alt="JOE Swim Academy Logo">
+                    </a>
+
+                    <div class="footer-brand-text">
+                        <span class="academy-name">JOE Swim Academy</span>
+                        <span class="footer-location">
+                            Air Force Club • Heliopolis
+                        </span>
+                    </div>
+
+                </div>
+
+                <p class="footer-desc">
+                    Professional swimming training for children, teenagers
+                    and adults at the Air Force Club, Heliopolis, Cairo.
+                </p>
+
+                <div class="social-links" id="footerSocialLinks">
+                    <!-- Populated by JS -->
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="levels.html">Swimming Levels</a></li>
+                    <li><a href="packages.html">Packages & Pricing</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Programs -->
+            <div class="footer-col">
+
+                <h3>Programs</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="kids.html">Kids Swimming</a></li>
+                    <li><a href="adults.html">Adult Classes</a></li>
+                    <li><a href="private-training.html">Private Training</a></li>
+                    <li><a href="competitive.html">Competitive Swimming</a></li>
+                    <li><a href="programs.html">Water Safety</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-col">
+
+                <h3>Contact Information</h3>
+
+                <ul class="footer-contact-list">
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="footerLocationText">
+                            Air Force Club, Heliopolis, Cairo, Egypt
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="#" id="footerPhoneLink">
+                            Loading phone...
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="#"
+                           id="footerWhatsappLink"
+                           target="_blank"
+                           rel="noopener">
+                            Chat on WhatsApp
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="contact.html">
+                            Send an Inquiry
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span id="currentYear">2026</span>
+                JOE Swim Academy.
+                All rights reserved.
+            </p>
+
+            <div class="footer-legal">
+
+                <a href="contact.html">Privacy Policy</a>
+
+                <a href="faq.html">Terms of Service</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+    <script src="data.js"></script>
+    <script src="contact.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
